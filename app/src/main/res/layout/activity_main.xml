@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/decimal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="32sp"
+        android:entries="@array/typeOfSpinner" />
+
+    <EditText
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/binary_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="binary"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/octal_input"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="octal"
+        android:inputType="numberDecimal"
+         />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/decimal_input"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="decimal"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/hexDecimal_input"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hex-Decimal"
+        android:inputType="text"
+         />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="convert"
+        android:text="convert" />
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/selectText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Choose the type of number you want to convert from the top spinner"
+            android:textColor="#000"
+            android:textSize="34sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
+            android:background="@drawable/corner"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Binary : "
+                android:gravity="start"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/binary_output"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                tools:text="010101"
+                android:gravity="start"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="16dp"
+            android:background="@drawable/corner"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Octal : "
+                android:gravity="start"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/octal_output"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                tools:text="010101"
+                android:gravity="start"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="16dp"
+            android:background="@drawable/corner"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Decimal : "
+                android:gravity="start"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/decimal_output"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                tools:text="010101"
+                android:gravity="start"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="16dp"
+            android:background="@drawable/corner"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Hex-Decimal : "
+                android:gravity="start"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/hexDecimal_output"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                tools:text="010101"
+                android:gravity="start"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

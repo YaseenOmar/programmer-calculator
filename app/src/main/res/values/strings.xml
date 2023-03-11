@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Programmer Calculator</string>
+    <string-array name="typeOfSpinner">
+        <item>select type of number </item>
+        <item>Binary </item>
+        <item>Octal </item>
+        <item>Decimal </item>
+        <item>Hexa-Decimal </item>
+    </string-array>
+</resources>
